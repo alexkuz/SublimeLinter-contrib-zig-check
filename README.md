@@ -1,7 +1,3 @@
-This is a template. For "how to make a linter", please check [the HOWTO](HOWTO.md).
-
------------------------------------------------------------------
-
 SublimeLinter-contrib-zig-check
 ================================
 
@@ -22,3 +18,34 @@ In order for `zig` to be executed by SublimeLinter, you must ensure that its pat
 - SublimeLinter settings: http://sublimelinter.readthedocs.org/en/latest/settings.html
 - Linter settings: http://sublimelinter.readthedocs.org/en/latest/linter_settings.html
 
+Additional SublimeLinter-contrib-zig-check settings:
+
+| Setting  | Description   |
+|:---------|:--------------|
+|build-cmd | If set, this command will be executed on file save instead of default `zig ast-check` |
+
+Example for `SublimeLinter.sublime-settings`:
+```json
+{
+  "linters": {
+    "zigcheck": {
+      "build-cmd": "zig build-lib -fno-emit-bin ./src/main.zig"
+    }
+    ...
+  }
+}
+```
+
+Project-specific settings (`<my-project>.sublime-project`):
+```json
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "SublimeLinter.linters.zigcheck.build-cmd": "zig build-lib -fno-emit-bin ./src/main.zig"
+  }
+}
+```

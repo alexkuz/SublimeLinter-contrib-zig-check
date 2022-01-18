@@ -2,5 +2,7 @@ SublimeLinter-contrib-zig-check
 -------------------------------
 This linter plugin for SublimeLinter provides an interface to `zig ast-check` command.
 
+To validate project with `zig build` instead use "build-cmd" setting.
+
 For more information, please see:
 https://github.com/alexkuz/SublimeLinter-contrib-zig-check
