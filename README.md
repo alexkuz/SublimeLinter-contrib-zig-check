@@ -3,7 +3,7 @@ SublimeLinter-contrib-zig-check
 
 [![Build Status](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-zig-check.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-zig-check)
 
-This linter plugin for [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter) provides an interface to [zig ast-check](__linter_homepage__). It will be used with files that have the “zig” syntax.
+This linter plugin for [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter) provides an interface to [zig ast-check](https://ziglang.org/) command. It will be used with files that have the “zig” syntax.
 
 ## Installation
 SublimeLinter must be installed in order to use this plugin. 
