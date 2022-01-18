@@ -22,7 +22,7 @@ Additional SublimeLinter-contrib-zig-check settings:
 
 | Setting  | Description   |
 |:---------|:--------------|
-|build-cmd | If set, this command will be executed on file save (to be precise, when file is not in "dirty" state) instead of default `zig ast-check`. This allows you to validate whole project with more detailed results. |
+| build&#8209;cmd | If set, this command will be executed on file save (to be precise, when file is not in "dirty" state) instead of default `zig ast-check`. This allows you to validate whole project with more detailed results. |
 
 Example for `SublimeLinter.sublime-settings`:
 ```json
