@@ -1,6 +1,4 @@
 from SublimeLinter.lint import Linter, STREAM_STDERR
-import sublime
-import os
 
 
 class SublimeLinterZigCheck(Linter):
